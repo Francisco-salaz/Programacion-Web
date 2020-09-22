@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BANCO X</title>
+</head>
+<body>
+	<h1>Identificación de usuarios
+	</h1>
+	<h2><Strong>Introduzca sus datos de identificación:</Strong></h2>
+	<h3><Strong>PARA CAPTURAR INFORMACION FAVOR DE LLENAR LOS ESPACIOS SIGUIENTES: </Strong></h3><br>
+	<form>
+		<label for="correo">E-mail: </label>
+		<input type="text" name="correo_n" id="correo">
+	</form><br>
+	<form>
+		<label for="clave">Contraseña: </label>
+		<input type="password" name="clave" id="clave">
+	</form>
+	<br>
+	<h3><Strong>Información Personal.</Strong></h3><br>
+	<form>
+		<label for="respuesta_nom">1. Nombre completo</label>
+		<input type="text" name="nombre" id="respuesta_nom">
+	</form><br>
+	<form>
+		<label for="RFC">2. R.F.C.</label>
+		<input type="text" name="textRFC" id="RFC">
+	</form><br>
+	<form>
+		<label for="CURP">3. CURP</label>
+		<input type="text" name="texCURP" id="CURP">
+	</form><br>
+	<form>
+		<label for="f_nac">4. Fecha de Nacimiento</label>
+		<input type="text" name="fechaN" id="f_nac">
+	</form><br>
+	<form>
+		<label for="num">5. Numero de Telefono</label>
+		<input type="text" name="numTelefono" id="num">
+		<input type="radio" id="casa" name="respuesta" value="Casa">
+		<label for="casa"> Casa</label>
+		<input type="radio" id="celular" name="respuesta" value="Celular">
+		<label for="celular"> Celular</label>
+	</form><br>
+	<form>
+		<p>6. Ocupación: 
+		<label for="trabajo"> Trabajo</label>
+		<input id="trabajo" name="ocupacion" type="checkbox" value="trabajo">
+		<label for="estudio"> Estudio</label>
+		<input id="estudio" name="ocupacion" type="checkbox" value="estudio">
+		<label for="otro">Otro (Especifique) </label>
+		<input type="text" name="otro" id="otro">
+		</p>
+	</form>
+	<h3><Strong>Información de la Tajeta.</Strong></h3><br>
+	<form>
+		<label for="n_tar">1. Numero de Tarjeta</label>
+		<input id="n_tar" name="tarjeta" type="number">
+	</form><br>
+	<form>
+		<label for="f_ven">2. Fecha de Vencimiento</label>
+		<input id="f_ven" name="Fecha_ven" type="text">
+	</form><br>
+	<form>
+		<label for="cvv">3. Código de seguridad CVV</label>
+		<input id="cvv" name="tar_cvv" type="number">
+	</form><br>
+	<form>
+		<label for="t_tar">4. Tipo de Tarjeta</label>
+		<select id="t_tar" name="t_tar">
+			<option value="credito">Crédito</option>
+			<option value="debito">Débito</option>
+		</select>
+	</form><br>
+	<form>
+		<label for="accion">5. Acción a realizar</label>
+		<input type="text" list="acciones" id="accion" name="accion">
+
+	<datalist id="acciones">
+		<option value="Estado de Cuenta"></option>
+		<option value="Solicitar Préstamo"></option>
+		<option value="Transferencia"></option>
+		<option value="Ver Movimientos"></option>
+		<option value="Verificar Saldo"></option>
+	</datalist>
+	</form><br>
+	<form>
+		<label for="blog"> Comentarios: </label>
+		<hr>
+		<textarea id="blog name="blog" rows="5" cols="70">
+		</textarea>
+	</form>
+	<form>
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
