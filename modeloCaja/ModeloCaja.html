@@ -13,66 +13,61 @@
 				de los elementos HTML. El modelo de caja también contiene opciones detalladas<br>
 				en lo referente al ajuste de márgenes, bordes, relleno (padding) y contenido de cada elemento.</p>
 		</div>
+				<img src="ejemplo.png" id="def" alt="Imagen que ejemplifica el modelo de cajas"/>
 	</section>
-	<figure id="img1">
-		<div>
-			<img src="ejemplo.png" alt="Imagen que ejemplifica el modelo de cajas"/>
-		</div>
-	</figure>
 	<section class="componentes">
 		<h1>Componentes</h1>
 			<ul>
-				<li> El <strong>borde </strong>(border). En negro, es el límite que separa el interior del exterior del elemento.</li>
-				<li> El <strong>márgen </strong>(margin). En naranja, es la parte exterior del elemento, por fuera del borde.</li>
-				<li> El <strong>relleno </strong>(padding). En verde, es la parte interior del elemento, entre el contenido y el borde.</li>
-				<li> El <strong>contenido </strong>(en azul). En azul, es la parte interior del elemento, excluyendo el relleno.</li>
+				<li> El <span>borde</span>(border). En negro, es el límite que separa el interior del exterior del elemento.</li>
+				<li> El <span>márgen</span> (margin). En naranja, es la parte exterior del elemento, por fuera del borde.</li>
+				<li> El <span>relleno</span> (padding). En verde, es la parte interior del elemento, entre el contenido y el borde.</li>
+				<li> El <span>contenido</span> (en azul). En azul, es la parte interior del elemento, excluyendo el relleno.</li>
 			</ul>
-	</section>
-	<figure id="img2">
-		<img src="mcaja.png" alt="Imagen que muestra la composicion del modelo de cajas"/>
-	</figure>
+			<div class="centrar">
+			<img src="mcaja.png" id="componen" alt="Imagen que muestra la composicion del modelo de cajas"/></div>
+	</section>	
 	<article class="dimensiones">
 		<h1>Dimensiones</h1>
-			<p>Para dar tamaños específicos a los diferentes elementos de un documento HTML, necesitaremos<br>
+			<p>Para dar tamaños específicos a los diferentes elementos de un documento HTML, necesitaremos
 			   asignarles valores a las propiedades <strong>width</strong> (ancho) y <strong>height</strong> (alto).
 			</p>
-				<figure id="dim1">
-				<img src="dim.png" alt="Imagen que describe el WIDHT y HEIGTH"/>
-				</figure>
-					<p>En el caso de utilizar el valor auto en las propiedades anteriores (que es lo mismo que no indicarlas,<br>
-			 			ya que es el valor que tienen por defecto), el navegador se encarga de calcular el ancho o alto necesario, <br>
-			 			dependiendo del contenido del elemento. Esto es algo que también puede variar, dependiendo del tipo de elemento<br>
+				<img src="dim.png" id="dim1" alt="Imagen que describe el WIDHT y HEIGTH"/>
+					<p>En el caso de utilizar el valor auto en las propiedades anteriores (que es lo mismo que no indicarlas,
+			 			ya que es el valor que tienen por defecto),<br> el navegador se encarga de calcular el ancho o alto necesario,
+			 			dependiendo del contenido del elemento. Esto es algo que también puede variar,<br> dependiendo del tipo de elemento
 			 			que estemos usando, y que veremos más adelante, en el apartado de maquetación.</p>			 			
-							<p>Otra forma de lidiar con esto, es utilizar las propiedades hermanas de width:<br>
-							min-width y max-width y las propiedades hermanas de height: min-height y max-height.<br>
-							Con estas propiedades, en lugar de establecer un tamaño fijo, establecemos unos máximos<br>
-							y unos mínimos, donde el ancho o alto podría variar entre esos valores.</p>
-								<img src="dimEjemplo.png" alt="Propiedades hermanas de WIDTH Y HEIGTH (Ejemplo)"/>
+							<p>Otra forma de lidiar con esto, es utilizar las propiedades hermanas de width:
+							min-width y max-width y las propiedades hermanas de height: min-height <br>y max-height.
+							Con estas propiedades, en lugar de establecer un tamaño fijo, establecemos unos máximos
+							y unos mínimos, donde el ancho o alto<br> podría variar entre esos valores.</p>
+								<img src="dimEjemplo.png" id="dim2" alt="Propiedades hermanas de WIDTH Y HEIGTH (Ejemplo)"/>
 									<P>En este caso, por ejemplo, a pesar de estar indicando un tamaño de 800px, le aplicamos<br>
 									un max-width de 500px, por lo que estamos limitando el elemento a un tamaño de ancho de 500<br>
 									píxeles como máximo y nunca superará ese tamaño.</P>
 										<P>Por un lado tenemos las propiedades de mínimos min-width y min-height, que por defecto<br>
 										tienen valor 0, mientras que por otro lado, tenemos las propiedades de máximos max-width <br>
 										y max-height, que por defecto tienen valor none:</P>
-											<img src="desc.png" alt="Descripcion de las propiedades hermanas de WIDTH Y HEIGTH"/>
+											<figure id="dim3">
+											<img src="desc.png" id="dim3" alt="Descripcion de las propiedades hermanas de WIDTH Y HEIGTH"/>
+											</figure>
 	</article>
-	<section class="zonaElem">
+	<article id="zonaElem">
 		<h1>Zonas de elemento</h1>
 			<p>Antes de continuar, es importante saber que en CSS existen ciertas palabras clave para hacer<br>
 			referencia a una zona u orientación concreta sobre un elemento. Son conceptosmuy sencillos y<br>
 			prácticamente lógicos, por lo que no tendrás ningún problema en comprenderlos. Son los siguientes:</p>
-				<img src="positions.png" alt="Imagen sobre palabras claves en CSS"/>
-					<lu>
-						<li><strong>Top</strong>: Se refiere a la parte superior del elemento.
-						<li><strong>Left</strong>: Se refiere a la parte izquierda del elemento.
-						<li><strong>Right</strong>: Se refiere a la parte derecha del elemento.
-						<li><strong>Bottom</strong>: Se refiere a la parte inferior del elemento.
-						<li><strong>Center</strong>: En algunos casos se puede especificar el valor center para referirse a la<br>
+				<img src="positions.png" id="zona1" alt="Imagen sobre palabras claves en CSS">
+					<ul>
+						<li><span>Top</span>: Se refiere a la parte superior del elemento.
+						<li><span>Left</span>: Se refiere a la parte izquierda del elemento.
+						<li><span>Right</span>: Se refiere a la parte derecha del elemento.
+						<li><span>Bottom</span>: Se refiere a la parte inferior del elemento.
+						<li><span>Center</span>: En algunos casos se puede especificar el valor center para referirse a la<br>
 							posición central entre los extremos horizontales o verticales.
-					</lu>
+					</ul>
 						<p>Estas palabras clave las utilizaremos muy a menudo en diferentes propiedades CSS para hacer<br>
-						referencia a una zona particular.
-	</section>
+						referencia a una zona particular.</p>
+	</article>
 	<section class="desbordamiento">
 		<h1>Desbordamiento</h1>
 			<p>Volvamos a pensar en la situación de la imagen anterior: Damos un tamaño de ancho y alto a un<br>
@@ -80,12 +75,11 @@
 			Probablemente lo que vimos en la imagen: el contenido se desbordaría.</p>
 				<p>Podemos modificar ese comportamiento con la propiedad de CSS overflow, o con alguna de sus<br>
 				propiedades específicas overflow-x o overflow-y:</p>
-					<img src="overflow.png" alt="Imagen sobre el comportamiento con la propiedad overflow de CSS"/>
+					<img src="overflow.png" id="des1" alt="Imagen sobre el comportamiento con la propiedad overflow de CSS"/>
 						<p>Dichas propiedades pueden tomar varios valores, donde visible es el valor que tiene por defecto,<br>
 						que permite que haya desbordamiento. Otras opciones son las siguientes, donde no se permite<br>
 						desbordamiento:</p>
-							<img src="propiedadesOver.png" alt="Imagen las propiedades que pueden tomar valores en overflow de CSS"/>
+							<img src="propiedadesOver.png" id="des2" alt="Imagen las propiedades que pueden tomar valores en overflow de CSS"/>
 	</section>
-
 </body>
 </html>

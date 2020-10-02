@@ -1,3 +1,63 @@
-* {
-	font: 1em/1.3 Arial, Helvetica, sans-serif;
+/*	font: 1/1.3 Arial, Helvetica, sans-serif;
+}*/
+span {
+	font-weight: bold;
+}
+
+.definicion{
+	font-family: ARIAL; font-size: 16pt; color: #00FFFF; text-align: center;
+}
+
+.componentes{
+	font-family: TIMES NEW ROMAN, sans-serif; font-size: 14pt; color: #0000FF;
+}
+
+.dimensiones{
+	font-family: SANVITO; font-size: 14pt; color: #B22222; text-align: center;
+}
+
+#zonaElem{
+	font-family: COURIER; font-size: 14pt; color: #228B22;
+}
+
+#zonaElem p{
+	text-align: center;
+}
+
+.desbordamiento{
+	font-family: ARIAL; font-size: 14pt; color: #FF00FF;
+}
+
+h1 {
+	color: black; text-align: center;
+}
+
+img#def{
+	height: 350px; width: 350px;
+}
+
+img#componen{
+	height: 200px; width: 200px;
+}
+
+img#dim1{
+	height: 150px; width: 700px;
+}
+
+img#dim2{
+	height: 150px; width: 700px;
+}
+
+img#dim3{
+	height: 150px; width: 700px;
+}
+
+img#zona1{
+	height: 350px; width: 350px;
+}
+img#des1{
+	height: 150px; width: 700px;
+}
+img#des2{
+	height: 150px; width: 700px;
 }
