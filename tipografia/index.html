@@ -1,40 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dia de la Independencia</title>
+	<title>Tipografia</title>
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
-<div id="introduccion">
-	<h1>El 16 de septiembre se celebra el<br>Dia de la Independencia de 
-	<br> Mexico</h1>
-	<h2>Lo que se celebra el 16 de septiembre</h2>
-	<p>El <span>Día de la Independencia de México</span>, es una celebración que<br>comienza poco antes de la medianoche del 15 de septiembre, para<br> recibir las primeras horas oficiales de la festividad.</p>
-	<p>Los colores de la bandera de México, verde, blanco y rojo se pueden
-	<br> ver en cualquier parte donde se festeja esta celebración, además 
-	<br>de que se degustan deliciosos platillos y bebidas tradicionales con amigos<br>y familiares mientras se grita <strong><em>“Viva México"</em></strong> o <strong><em>“Viva la Independencia”</em></strong>,<br> en señal de celebración.</p>
-</div>
-<div>
-	<h3>Una breve historia de la Independencia de Mexico</h3>
-	<p>La conquista española de los aztecas y otros imperios<br> mesoamericanos comenzó alrededor del año 1519 cuando los<br>galeones españoles comandados por Hernán Cortés, anclaron en el<br>islote de San Juan de Ulúa, Veracruz, en busca de riqueza.</p>
-
-	<p>El Día de la Independencia en México celebra la fecha de 1810,<br> cuando se cree que Miguel Hidalgo y Costilla, un sacerdote y uno de<br>los principales líderes que luchó por la Independencia del país, dio el<br>Grito de Independencia (o Grito de Dolores) en el pueblo de Dolores,<br>en la zona norcentral de lo que hoy es el estado de Hidalgo.</p>
-
-	<p>Este llamado a la insurrección de Hidalgo y los demás revolucionarios<br>ayudó a movilizar a los ciudadanos de México a levantarse contra la<br>corona española. La independencia se alcanzó eventualmente en el año de 1821.</p>
-	<img src= "GritoDolores.jpg" alt="Grito de Independencia"/>
-	<h4>Principales personajes de la Independencia de Mexico</h4>
-	<ul>
-		<li>Miguel Hidalgo y Costilla
-		<li>Ignacio Allende
-		<li>Josefa Ortiz de Dominguez
-		<li>Juan Aldama
-		<li>Jose Maria Morelos
-	</ul>
-	<h5>TEMAS RELACIONADOS</h5>
-	<ol>
-		<li>5 de Febrero (Dia de la constitucion)
-		<li>21 de Marzo (Natalicio de Benito Juarez)
-		<li>20 de Noviembre (Dia de la Revolucion Mexicana)
-	</ol>
-</div>
+	<div>
+		font-size: ABSOLUTO medium | xx-small | small | large | x-large | xx-large | smaller | large | length |
+		initial | inherit;
+		<div style="font-size: medium;">tamaño mediano</div>
+		<div style="font-size: xx-small;">tamaño xx-small</div>
+		<div style="font-size: xx-large;">tamaño xx-large</div>
+		<div style="font-size: larger;">mas grande</div>
+		<div style="font-size: smaller;">mas pequeño</div>
+		<div style="font-size: 24px;">24 px</div>
+	</div>
+	<hr>
+	<div style="font-size: 1em;">
+		font-size: tamaño relativo (em)
+		<div style="font-size: 2em;">2 veces el tamaño del padre</div>
+		<div style="font-size: .5em;">mitad del tamaño del padre</div>
+			<div style="font-size: 2em;">dos veces su padre</div>
+			<div style="font-size: 4em;">cuatro veces su padre</div>
+		</div>
+		<div style="font-size: 2em;">dos veces su padre</div>
+		<div style="font-size: 4em;">cuatro veces su padre</div>
+		<div style="font-size: 120%;">120% mas que su padre</div>		
+	</div>
+	<hr>
+	<div>
+		font-weights(100:900) = (normal,bold)
+		<div style="font-weight: 100;">font-weight:100</div>
+		<div style="font-weight: 400;">font-weight:400</div>
+		<div style="font-weight: 900;">font-weight:900</div>
+	</div>
+	<hr>
+	<div>
+		font-styles normal, italic, oblique
+		<div style="font-style: normal;">normal</div>
+		<div style="font-style: italic;">italic</div>
+		<div style="font-style: oblique;">oblique</div>
+	</div>
+	<hr>
+	<div>
+		text-transform: none | capitalize | uppercase | lowercase | initial | inherit
+		<div style="text-transform: capitalize;">Mayúscula letra inicial</div>
+		<div style="text-transform: uppercase;">Mayúsculas</div>
+		<div style="text-transform: lowercase;">Minúsculas</div>
+	</div>
+	<hr>
+	<div>
+		text-align: left | center | right
+		<div style="text-align: left;">Izquierda</div>
+		<div style="text-align: center;">Centro</div>
+		<div style="text-align: right;">Derecha</div>
+	</div>
+	<hr>
+	<div style="line-height: 3.0">
+		<div>
+		text-decoration:
+			<br> text-decoration-line (underline, overline, line-through)
+			<br> text-decoration-color
+			<br> text-decoration-style (solid, wavy, dotted, dashed, double)
+		</div>
+		<div style="text-decoration: overline blue solid;">linea encima azul solida</div>
+		<div style="text-decoration: underline red wavy;">linea abajo roja ondulada</div>
+		<div style="text-decoration: line-through maroon dotted;">linea atravesada verde punteada</div>
+		<div style="text-decoration: underline overline blue double;">linea encima, abajo, doble, rosa</div>
+	</div>
+	<hr>
+	<div class="no-user-font1">
+		Este es un ejemplo de fuente que no es de usuario, cinculada con &lt;link&gt;
+	</div>
+	<div class="no-user-font2">
+		Este es un ejemplo de fuente que no es de usuario, utilizando &amp;font-face
+	</div>
 </body>
 </html>
