@@ -1,0 +1,95 @@
+body {
+    background-color: #00FFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #FFA500;
+    height: 70px;
+    margin: auto;
+    border: 0px;
+    padding-bottom: 10px;
+}
+
+header #subtitulo {
+    float: right;
+    color: WHITE;
+    padding-right: 15px;
+}
+
+header #titulo {
+    font-size: 25px;
+    color: WHITE;
+    float: left;
+    padding-left: 15px;
+}
+
+.enlaces {
+    color: WHITE;
+    text-align: center;
+}
+
+#enl:hover {
+    padding: 4px;
+    color: BLACK;
+    background-color: #1E90FF;
+}
+
+ul, li {
+    display: inline-block;
+    color: WHITE;
+    font-weight: bold;
+    background-color: #FF8C00;
+    padding: 3px;
+    margin-bottom: 0px;
+}
+
+.division {
+    background-color: #87CEEB;
+    width: 600px;
+    height: 330px;
+    margin: auto;
+    padding: auto; 
+    overflow: hidden;
+}
+
+div::first-line {
+    color: BLACK;
+    font-weight: bold;
+}
+
+div{
+    width: 250px;
+    height: 150px;
+    background-color: #FF4500;
+    padding: 20px;
+    border: 0px;
+    position: relative;
+    color: WHITE;
+    overflow: hidden;
+}
+
+#div1 {
+    margin-right: 20px;
+    float: right;
+}
+
+#div2 {
+    margin-left: 20px;
+    float: left;  
+}
+
+#div3 {
+    margin: 20px;
+    top: 15px;
+    float: right;
+}
+
+#div4 {
+    margin: 20px;
+    top: 15px;
+    float: left;
+}
