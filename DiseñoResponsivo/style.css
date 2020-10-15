@@ -1,0 +1,146 @@
+body{background-image: url(https://i.pinimg.com/474x/25/59/3e/25593eea5510a5bd6ffce79a27164cea.jpg);}
+*{font-family: arial;color :white;}
+h2,h3 {color: #E85E5E;}
+em{color: #FDFD00}
+#primera,#segunda,#mapa{height: 50%;width: 100%}
+div{text-align: center;}
+#sin,#conn{height: 25%;width: 50%}
+
+@media(max-width: 600px){
+    .col-ch-1,.col-ch-2,.col-ch-3,
+    .col-ch-4,.col-ch-5,.col-ch-6,
+    .col-ch-7,.col-ch-8,.col-ch-9,
+    .col-ch-10,.col-ch-11,.col-ch-12{
+    	float: left;
+        border: 1px solid red;
+    }
+    .col-ch-1{
+        width: 8.33%;
+    }
+    .col-ch-2{
+        width: 16.66%;
+    }
+    .col-ch-3{
+        width: 25%;
+    }
+    .col-ch-4{
+        width: 33.33%;
+    }
+    .col-ch-5{
+        width: 48.66%;
+    }
+    .col-ch-6{
+        width: 50%;
+    }
+    .col-ch-7{
+        width: 58.33%;
+    }
+    .col-ch-8{
+        width: 66.66%;
+    }
+    .col-ch-9{
+        width: 75%;
+    }
+    .col-ch-10{
+        width: 83.33%;
+    }
+    .col-ch-11{
+        width: 91.66%;
+    }
+    .col-ch-12{
+        width: 100%;
+    }
+
+}
+
+@media(min-width: 601px) and (max-width: 1199px){
+    .col-md-1,.col-md-2,.col-md-3,
+    .col-md-4,.col-md-5,.col-md-6,
+    .col-md-7,.col-md-8,.col-md-9,
+    .col-md-10,.col-md-11,.col-md-12{
+    	float: left;
+        border: 1px solid white;
+    }
+    .col-md-1{
+        width: 8.33%;
+    }
+    .col-md-2{
+        width: 16.66%;
+    }
+    .col-md-3{
+        width: 25%;
+    }
+    .col-md-4{
+        width: 33.33%;
+    }
+    .col-md-5{
+        width: 48.66%;
+    }
+    .col-md-6{
+        width: 50%;
+    }
+    .col-md-7{
+        width: 58.33%;
+    }
+    .col-md-8{
+        width: 66.66%;
+    }
+    .col-md-9{
+        width: 75%;
+    }
+    .col-md-10{
+        width: 83.33%;
+    }
+    .col-md-11{
+        width: 91.66%;
+    }
+    .col-md-12{
+        width: 100%;
+    }
+}
+
+@media(min-width: 1200px){
+    .col-lg-1,.col-lg-2,.col-lg-3,
+    .col-lg-4,.col-lg-5,.col-lg-6,
+    .col-lg-7,.col-lg-8,.col-lg-9,
+    .col-lg-10,.col-lg-11,.col-lg-12{
+    	float: left;
+        border: 1px solid blue;
+    }
+    .col-lg-1{
+        width: 8.33%;
+    }
+    .col-lg-2{
+        width: 16.66%;
+    }
+    .col-lg-3{
+        width: 25%;
+    }
+    .col-lg-4{
+        width: 33.33%;
+    }
+    .col-lg-5{
+        width: 48.66%;
+    }
+    .col-lg-6{
+        width: 50%;
+    }
+    .col-lg-7{
+        width: 58.33%;
+    }
+    .col-lg-8{
+        width: 66.66%;
+    }
+    .col-lg-9{
+        width: 75%;
+    }
+    .col-lg-10{
+        width: 83.33%;
+    }
+    .col-lg-11{
+        width: 91.66%;
+    }
+    .col-lg-12{
+        width: 100%;
+    }
+}

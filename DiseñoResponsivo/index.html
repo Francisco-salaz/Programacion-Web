@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href = "style.css" type ="text/css" rel ="stylesheet">
+	<meta name="Viewport" content="width=device-width, initial-scale=1">
+	<title>Diseno Responsivo</title>
+</head>
+<body>
+	<div class="col-ch-12 col-md-12 col-lg-12">
+		<h2>Diseño responsivo:</h2>
+	</div>	
+	<div class="col-ch-12 col-md-12 col-lg-6">	
+		<img src="primera.png" id="primera">
+	</div>
+	<div class="col-ch-12 col-md-12 col-lg-5">
+		<p>Es un diseño que responde al tamaño del dispositivo desde el que se está visualizando la web, adaptando las dimensiones del contenido y mostrando los elementos de una forma ordenada y optimizada sea cual sea el soporte.
+		</p>
+		<p> El PC está perdiendo el combate contra la cantidad de dispositivos con los que podemos acceder hoy en día a la red.<br>
+		Hasta hace algunos años era imprescindible utilizar el ordenador para navegar por internet; ahora en cambio, es muy probable que la mayoría de accesos se realicen desde plataformas mobile o móviles. Por lo que se ha convertido en algo esencial optimizar los sitios web para un buen uso en estos tipos de dispositivos.
+		</p>
+	</div>
+	<div class="col-ch-12 col-md-12 col-lg-12">
+		<h2>¿En qué se diferencian Responsive Web Design y Mobile First Web?</h2>
+		<p>Aunque van de la mano, hay que diferenciar entre Responsive Web Design o, lo que viene a ser lo mismo, Diseño Web Adaptativo, y Mobile First Web.<br>
+		El Diseño Web Adaptativo es aquel capaz de adaptarse a diferentes tamaños y dispositivos, es decir,  dependiendo de qué dispositivo sea en el que se cargue, tu sitio web se verá más accesible y fácil de usar. Sin embargo, lo que propone el término Mobile First es empezar a diseñar un sitio web desde la resolución más pequeña para ir creciendo y adaptando el contenido y el diseño a la resolución más grande.
+		</p>
+		<img src="segunda.png" id="segunda">
+	</div>
+	<div class="col-ch-12 col-md-12 col-lg-12">
+		<h2>Media Queries</h2>
+		<p>Las Media Queries son las herramientas fundamentales que se encargan de aplicar diferentes estilos para diferentes dispositivos, y proporcionan la mejor experiencia para cada tipo de usuario que se encuentra navegando en tu sitio web.<br>
+		Las Media Queries son un módulo de CSS que sirve para detectar el tipo de dispositivo por el que se está navegando; de esa manera el contenido consigue adaptarse al dispositivo concreto a través de las distintas condiciones que tú mismo asignas, como pueden ser ancho y alto de la ventana del navegador, ancho y alto del dispositivo, la resolución del dispositivo o la orientación de la pantalla. Son declaraciones lógicas que actúan dependiendo de las condiciones específicas que tú mismo declaras en la hoja de estilos. Si la premisa se cumple, se aplicaran los estilos definidos; si no, los omitirá por completo.</p>
+		<h3>Hay dos formas de implementarlas:</h3>
+		</div>
+		<div class="col-ch-5 col-md-12 col-lg-5">
+		<p>
+			<em>La primera opción:</em> para poner en funcionamiento las Media Queries es a través del atributo media de la etiqueta &lt;link&gt;. Como sabemos, esta etiqueta es la que se usa para enlazar una hoja de estilo con un documento HTML. En ese enlace podemos especificar condiciones que deben cumplirse para que los estilos enlazados se apliquen. Debería ir dentro del &lt;head&gt; de nuestro HTML.
+		</p>
+		</div>
+		<div class="col-ch-6 col-md-12 col-lg-6">
+		<p>
+			<em>La segunda opción:</em> más recomendable para aplicar las Media Queries: basta con incluir todas las condiciones necesarias dentro de un único archivo CSS. Así, incorporaríamos la construcción @media seguido de las condiciones que queremos definir para cada tipo de dispositivo y donde se apliquen entre llaves { } los estilos concretos para cada uno de ellos. Es la manera más aconsejable, ya que la carga es de un único archivo CSS.
+		</p>
+	</div>
+	<div class="col-ch-5 col-md-6 col-lg-5">
+		<h2>Operadores lógicos para las Medias Queries</h2>
+		<p>También se pueden combinar más de una condición en la misma Media Query para concretar todavía más un rango de resolución, mediante los operadores lógicos:</p>
+		<ul>
+			<li>Operador and: las dos condiciones deben cumplirse para que se apliquen los estilos.</li>
+			<li>Operador not: es una negación de una condición. Cuando esta condición no se cumpla, se aplicarán las media queries definidas.</li>
+			<li>Operador only: se aplican las reglas solo en el caso de que se cumpla.</li>
+			<li>Operador or: se pueden poner varias condiciones separadas por comas y en el momento que se cumpla cualquiera de ellas, se aplicarán los estilos.</li>
+		</ul>
+	</div>
+	<div class="col-ch-6 col-md-5 col-lg-6">
+		<h3>Estos son algunos de los parámetros generales que se pueden emplear a la hora de construir las condiciones en las Media Queries:</h3>
+		<ul>
+			<li>width: anchura de la ventana del navegador.</li>
+			<li>height: altura de la ventana del navegador.</li>
+			<li>device-width: anchura de la resolución de pantalla.</li>
+			<li>device-height: altura de la resolución de pantalla.</li>
+			<li>orientation (portrait/landscape): dispositivo en horizontal o en vertical.</li>
+			<li>resolution: densidad de píxeles.</li>
+		</ul>
+	</div>
+	<div class="col-ch-12 col-md-12 col-lg-12">
+		<h2>¿Qué hace la meta-etiqueta Viewport?</h2>
+		<p>El Viewport es el área visual donde se plasma el contenido del documento HTML de tu sitio web. Se podría traducir  como vista o ventana y nos sirve para definir qué área de pantalla está disponible al renderizar un documento, la escala/zoom que debe mostrar inicialmente. </p>
+	</div>
+	<div class="col-ch-5 col-md-5 col-lg-5"><img  src="sin.png" id="sin"></div>
+	<div class="col-ch-6 col-md-6 col-lg-6"> <img  src="conn.png" id="conn"></div>
+	<div class="col-ch-12 col-md-12 col-lg-12">
+		<h2>Mapa conceptual</h2>
+		<img src="mapa.jpg" id="mapa">
+	</div>
+	<div class="col-ch-12 col-md-12 col-lg-12">
+		<h2>¿Deseas conocer más? <a href="https://aukera.es/blog/diseno-responsive/">Da click aquí</a> </h2>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

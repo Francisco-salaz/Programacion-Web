@@ -33,7 +33,7 @@ header #titulo {
 }
 
 #enl:hover {
-    padding: 4px;
+    /*padding: 4px;*/
     color: BLACK;
     background-color: #1E90FF;
 }
