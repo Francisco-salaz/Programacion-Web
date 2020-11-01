@@ -1,0 +1,38 @@
+body{background-image: url(https://www.guiadelnino.com/var/guiadelnino.com/storage/images/planes-para-ninos/cuentos-infantiles/6-cuentos-populares-de-animales/el-gato-con-botas/6214095-9-esl-ES/el-gato-con-botas.png);
+background-size: 100% 100%;
+  background-attachment: fixed;}
+
+#imagen img{height: 500px;}
+#repetir{width: 50px;height: 50px;}
+/*
+#sonido{text-align: center;}
+*/
+#primera,#segunda,#tercera,#cuarta,#quinta,#sexta,#septima,#octava,#novena{
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-textura-papel-viejo_108964-98.jpg?size=626&ext=jpg);
+  border: 1px solid black;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 16px;
+  padding: 17px 0px;
+  font-weight: bold;
+  font-family: 'Nunito';
+  display: none;
+}
+
+
+
+#btn-back,#btn-next,#btn-mute,#btn-repeat,#btn-pause{
+  width: 50px;
+  height: 50px;
+  background: #fd4d3c;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 16px;
+  padding: 17px 0px;
+  color: #141c3a;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+  font-family: 'Nunito';}
+
