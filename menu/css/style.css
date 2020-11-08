@@ -1,0 +1,27 @@
+body{background-color: #0f9b0f;}
+
+img {
+ max-width: 100%;
+ width: 100px;
+}
+
+a{color: #fff;}
+
+#navegacion{ background-color: #f12711;}
+
+img#campo{
+	height: 300px;
+	width: 600px;
+}
+h4{
+	color:#FFF;
+}
+#contener{background-color: #52c234;}
+
+#cont{
+	background-color: black;
+}
+#nombre{
+	color: #FFF; 
+	padding-top: 60px;
+}
