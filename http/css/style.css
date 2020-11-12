@@ -1,0 +1,39 @@
+
+img {
+ max-width: 100%;
+ width: 100px;
+}
+
+img#img1{
+	height: 200px;
+	width: 400px;
+}
+
+img#img2{
+	height: 200px;
+	width: 300px;
+}
+
+img#img3, img#img4{
+	height: 100px;
+	width: 600px;
+}
+
+img#img5{
+	height: 400px;
+	width: 600px;
+}
+img#img6, img#img7{
+	height: 400px;
+	width: 	500px;
+}
+
+a{color: #fff;}
+
+#navegacion{ background-color: #f12711;}
+
+#cont{
+	background-color: black;
+	color: white;
+}
+

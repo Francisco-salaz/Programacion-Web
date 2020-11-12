@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+	<title>Protocolo HTTP</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-dark navbar-expand-sm fixed-top" id="navegacion">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+				<span class="nsvbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand mr-auto" href="#">HTTP</a>
+				<div class="collapse navbar-collapse" id="Navbar">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active"><a class="nav-link" href="#gene">Generalidades</a></li>
+						<li class="nav-item"><a class="nav-link" href="#arq">Arquitectura</a></li>
+						<li class="nav-item"><a class="nav-link" href="#carac">Caracteristicas</a></li>
+						<li class="nav-item"><a class="nav-link" href="#control">Control</a></li>
+						<li class="nav-item"><a class="nav-link" href="#flujo">Flujo</a></li>
+						<li class="nav-item"><a class="nav-link" href="#mens">Mensajes</a></li>
+					</ul>
+				</div>
+		</div>
+	</nav>
+	<header class="jumbotron" id="cont">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm">
+					<h1 id="nombre">Protocolo HTTP</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div>
+		<ol class="col-12 breadcrumb" id="navegacion">
+			<li class-"breascrumb-item active"><a href="index.html">Inicio</a></li>
+		</ol>
+	</div>
+	<div class="container" id="gene">
+		<div class="row">
+			<h2 class="col-12 col-sm-12">Generalidades del protocolo HTTP</h2>
+				<div class="col-12 col-sm-12"><p>HTTP, de sus siglas en inglés: "Hypertext Transfer Protocol", es el nombre de un protocolo el cual nos permite realizar una petición de datos y recursos, como pueden ser documentos HTML. Es la base de cualquier intercambio de datos en la Web, y un protocolo de estructura cliente-servidor, esto quiere decir que una petición de datos es iniciada por el elemento que recibirá los datos (el cliente), normalmente un navegador Web. Así, una página web completa resulta de la unión de distintos sub-documentos recibidos, como, por ejemplo: un documento que especifique el estilo de maquetación de la página web (CSS), el texto, las imágenes, vídeos, scripts, etc...</p>
+				</div>
+				<div class="col-12 col-sm-6 offset-sm-2">
+					<img src="img1.PNG" id="img1">
+				</div>
+				<div class="col-12 col-sm-4"><p>Clientes y servidores se comunican intercambiando mensajes individuales (en contraposición a las comunicaciones que utilizan flujos continuos de datos). Los mensajes que envía el cliente, normalmente un navegador Web, se llaman peticiones, y los mensajes enviados por el servidor se llaman respuestas.</p>
+				</div>
+				<div class="col-12 col-sm-7"><p>Diseñado a principios de la década de 1990, HTTP es un protocolo ampliable, que ha ido evolucionando con el tiempo. Es lo que se conoce como un protocolo de la capa de aplicación, y se transmite sobre el protocolo TCP, o el protocolo encriptado TLS, aunque teóricamente podría usarse cualquier otro protocolo fiable. Gracias a que es un protocolo capaz de ampliarse, se usa no solo para transmitir documentos de hipertexto (HTML), si no que además, se usa para transmitir imágenes o vídeos, o enviar datos o contenido a los servidores, como en el caso de los formularios de datos. HTTP puede incluso ser utilizado para transmitir partes de documentos, y actualizar páginas Web en el acto.</p>
+				</div>
+				<div class="col-12 col-sm-5">
+					<img src="img2.PNG" id="img2">
+				</div>
+			</div>
+		</div>
+	<div class="container" id="arq">
+		<div class="row">
+			<h2 class="col-12 col-sm-12">Arquitectura de los sistemas basados en HTTP</h2>
+			<div class="col-12"><p>HTTP es un protocolo basado en el principio de cliente-servidor: las peticiones son enviadas por una entidad: el agente del usuario (o un proxy a petición de uno). La mayoría de las veces el agente del usuario (cliente) es un navegador Web, pero podría ser cualquier otro programa, como por ejemplo un programa-robot, que explore la Web, para adquirir datos de su estructura y contenido para uso de un buscador de Internet.</p>
+			</div>
+			<div class="col-12 col-sm-6"><p>Cada petición individual se envía a un servidor, el cuál la gestiona y responde. Entre cada petición y respuesta, hay varios intermediarios, normalmente denominados proxies, los cuales realizan distintas funciones, como: gateways o caches.</p>
+			</div>
+			<div class="col-12 col-sm-6">
+				<img src="img3.PNG" id="img3">
+			</div>
+			<div class="col-12"><p>En realidad, hay más elementos intermedios, entre un navegador y el servidor que gestiona su petición: hay otros tipos de dispositivos: como routers, modems ... Es gracias a la arquitectura en capas de la Web, que estos intermediarios, son transparentes al navegador y al servidor, ya que HTTP se apoya en los protocolos de red y transporte. HTTP es un protocolo de aplicación, y por tanto se apoya sobre los anteriores. Aunque para diagnosticar problemas en redes de comunicación, las capas inferiores son irrelevantes para la definición del protocolo HTTP.</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<h3 class="col-12 col-sm-12 text-right">Cliente: el agente del usuario</h3>
+			<div class="col-12"><p>El agente del usuario, es cualquier herramienta que actué en representación del usuario. Esta función es realizada en la mayor parte de los casos por un navegador Web. Hay excepciones, como el caso de programas específicamente usados por desarrolladores para desarrollar y depurar sus aplicaciones.<br>
+			El navegador es siempre el que inicia una comunicación (petición), y el servidor nunca la comienza (hay algunos mecanismos que permiten esto, pero no son muy habituales).</p>
+			</div>
+			<div class="col-12 col-sm-6"><p>Para poder mostrar una página Web, el navegador envía una petición de documento HTML al servidor. Entonces procesa este documento, y envía más peticiones para solicitar scripts, hojas de estilo (CSS), y otros datos que necesite (normalmente vídeos y/o imágenes). El navegador, une todos estos documentos y datos, y compone el resultado final: la página Web. Los scripts, los ejecuta también el navegador, y también pueden generar más peticiones de datos en el tiempo, y el navegador, gestionará y actualizará la página Web en consecuencia.</p>
+			</div>
+			<div class="col-12 col-sm"><p>Una página Web, es un documento de hipertexto (HTTP), luego habrá partes del texto en la página que puedan ser enlaces (links) que pueden ser activados (normalmente al hacer click sobre ellos) para hacer una petición de una nueva página Web, permitiendo así dirigir su agente de usuario y navegar por la Web. El navegador, traduce esas direcciones en peticiones de HTTP, e interpretara y procesará las respuestas HTTP, para presentar al usuario la página Web que desea.</p>
+			</div>
+			<div class="col-12 col-sm-6">
+			<h3 class="text-right">El servidor Web</h3>
+			<p>Al otro lado del canal de comunicación, está el servidor, el cual "sirve" los datos que ha pedido el cliente. Un servidor conceptualmente es una unica entidad, aunque puede estar formado por varios elementos, que se reparten la carga de peticiones, (load balancing), u otros programas, que gestionan otros computadores (como cache, bases de datos, servidores de correo electrónico, ...), y que generan parte o todo el documento que ha sido pedido.<br>
+			Un servidor no tiene que ser necesariamente un único equipo físico, aunque si que varios servidores pueden estar funcionando en un único computador. En el estándar HTTP/1.1 y Host , pueden incluso compartir la misma dirección de IP.</p>
+			</div>
+			<div class="col-12 col-sm-6">
+			<h3 class="text-right">Proxies</h3>
+			<p>Entre el cliente y el servidor, además existen distintos dispositivos que gestionan los mensajes HTTP. Dada la arquitectura en capas de la Web, la mayoria de estos dispositivos solamente gestionan estos mensajes en los niveles de protocolo inferiores: capa de transporte, capa de red o capa física, siendo así transparentes para la capa de comunicaciones de aplicación del HTTP, además esto aumenta el rendimiento de la comunicación. Aquellos dispositivos, que sí operan procesando la capa de aplicación son conocidos como proxies. Estos pueden ser transparentes, o no (modificando las peticiones que pasan por ellos), y realizan varias funciones.</p>
+			</div>
+		</div>
+	</div>
+	<div class="container" id="carac">
+		<div class="row">
+			<h2 class="col-12 col-sm-12">Caracteristicas clave del protocolo HTTP</h2>
+			<div class="col-12 col-sm-4">
+				<h3>HTTP es sencillo</h3>
+				<p>Incluso con el incremento de complejidad, que se produjo en el desarrollo de la versión del protocolo HTTP/2, en la que se encapsularon los mensajes, HTTP esta pensado y desarrollado para ser leído y fácilmente interpretado por las personas, haciendo de esta manera más facil la depuración de errores, y reduciendo la curva de aprendizaje para las personan que empieza a trabajar con él.</p>
+			</div>
+			<div class="col-12 col-sm-3">
+				<h3>HTTP es extensible</h3>
+				<p>Presentadas en la versión HTTP/1.0, las cabeceras de HTTP, han hecho que este protocolo sea fácil de ampliar y de experimentar con él. Funcionalidades nuevas pueden desarrollarse, sin más que un cliente y su servidor, comprendan la misma semántica sobre las cabeceras de HTTP.</p>
+			</div>
+			<div class="col-12 col-sm-5">
+				<h3>HTTP es un protocolo con sesiones</h3>
+				<p>HTTP es un protocolo sin estado, es decir: no guarda ningún dato entre dos peticiones en la mísma sesión. Esto crea problemáticas, en caso de que los usuarios requieran interactuar con determinadas páginas Web de forma ordenada y coherente, por ejemplo, para el uso de "cestas de la compra" en páginas que utilizan en comercio electrónico. Pero, mientras HTTP ciertamente es un protocolo sin estado, el uso de HTTP cookies, si permite guardar datos con respecto a la sesión de comunicación. Usando la capacidad de ampliación del protocolo HTTP, las cookies permiten crear un contexto común para cada sesión de comunicación.</p>
+			</div>
+			<div class="col-12 col-sm-12">
+				<h3>HTTP y conexiones</h3>
+				<p>Una conexión se gestiona al nivel de la capa de trasporte, y por tanto queda fuera del alcance del protocolo HTTP. Aún con este factor, HTTP no necesita que el protocolo que lo sustenta mantenga una conexión continua entre los participantes en la comunicación, solamente necesita que sea un protocolo fiable o que no pierda mensajes (como mínimo, en todo caso, un protocolo que sea capaz de detectar que se ha pedido un mensaje y reporte un error). De los dos protocolos más comunes en Internet, TCP es fiable, mientras que UDP, no lo es. Por lo tanto HTTP, se apoya en el uso del protocolo TCP, que está orientado a conexión, aunque una conexión continua no es necesaria siempre.<br><br>
+				En la versión del protocolo HTTP/1.0, habría una conexión TCP por cada petición/respuesta intercambiada, presentando esto dos grandes inconvenientes: abrir y crear una conexión requiere varias rondas de mensajes y por lo tanto resultaba lento. Esto sería más eficiente si se mandaran varios mensajes.
+				Para atenuar estos inconvenientes, la versión del protocolo HTTP/1.1 presentó el 'pipelining'  y las conexiones persistentes: el protocolo TCP que lo transmitía en la capa inferior se podía controlar parcialmente, mediante la cabecera 'Connection'. La versión del protocolo HTTP/2  fue más allá y usa multiplexación de mensajes sobre un única conexión, siendo así una comunicación más eficiente.<br><br>
+				Todavía hoy se sigue investigando y desarrollando para conseguir un protocolo de transporte más conveniente para el HTTP. Por ejemplo, Google está experimentado con QUIC, que se apoya en el protocolo UDP y presenta mejoras en la fiabilidad y eficiencia de la comunicación. </p>
+			</div>
+		</div>
+	</div>
+	<div class="container" id="control">
+		<div class="row">
+			<h2 class="col-12 col-sm-12">¿Que se puede controlar con HTTP?</h2>
+			<div class="col-12 col-sm-12"><p>La característica del protocolo HTTP de ser ampliable, ha permitido que durante su desarrollo se hayan implementado más funciones de control y funcionalidad sobre la Web: caché o métodos de identificación o autentificación fueron temas que se abordaron pronto en su historia. Al contrario la relajación de la restricción de origen solo se ha abordado en los años de la década de 2010.<br><br>
+			Se presenta a continuación una lista con los elementos que se pueden controlar con el protocolo HTTP:</p>
+			<ul class="col-12 col-sm-8 offset-sm-2">
+				<li>Cache:<br> El como se almacenan los documentos en la caché, puede ser especificado por HTTP. El servidor puede indicar a los proxies y clientes, que quiere almacenar y durante cuanto tiempo. Aunque el cliente, también puede indicar a los proxies de caché intermedios que ignoren el documento almacenado.</li>
+				<li>Flexibilidad del requisito de origen:<br>Para prevenir invasiones de la privacidad de los usuarios, los navegadores Web, solamente permiten a páginas del mismo origen, compartir la información o datos. Esto es una complicación para el servidor, asi que mediante cabeceras HTTP, se puede flexibilizar o relajar esta división entre cliente y servidor</li>
+				<li>Autentificación:<br>Hay páginas Web, que pueden estar protegidas, de manera que solo los usuarios autorizados puedan acceder. HTTP provee de servicios básicos de autentificación, por ejemplo mediante el uso de cabeceras como:  WWW-Authenticate, o estableciendo una sesión especifica mediante el uso de  HTTP cookies. </li>
+				<li>Proxies y  tunneling:<br>Servidores y/o clientes pueden estar en intranets y esconder así su verdadera dirección IP a otros. Las peticiones HTTP utilizan los proxies para acceder a ellos. Pero no todos los proxies son HTTP proxies. El protocolo SOCKS, por ejemplo, opera a un nivel más bajo. Otros protocolos, como el FTP, pueden ser servidos mediante estos proxies.</li>
+				<li>Sesiones:<br>El uso de HTTP cookies permite relacionar peticiones con el estado del servidor. Esto define las sesiones, a pesar de que por definición el protocolo HTTP es un protocolo sin estado. Esto es muy útil no sólo para aplicaciones de comercio electrónico, sino también para cualquier sitio que permita configuración al usuario.</li>
+			</ul>
+			</div>	
+		</div>
+	</div>
+	<div class="container" id="flujo">
+		<div class="row">
+			<h2 class="col-12 col-sm-12">Flujo de HTTP</h2>
+			<div class="col-12 col-sm-12"><p>Cuando el cliente quiere comunicarse con el servidor, tanto si es directamente con él, o a través de un proxy intermedio, realiza los siguientes pasos:</p>
+			<ol class="col-12 col-sm-8 offset-sm-2">
+				<li>Abre una conexión TCP: la conexión TCP se usará para hacer una petición, o varias, y recibir la respuesta. El cliente pude abrir una conexión nueva, reusar una existente, o abrir varias a la vez hacia el servidor.</li>
+				<li>Hacer una petición HTTP: Los mensajes HTTP (previos a HTTP/2) son legibles en texto plano. A partir de la versión del protocolo HTTP/2, los mensajes se encapsulan en franjas, haciendo que no sean directamente interpretables, aunque el principio de operación es el mismo.
+				<img src="img4.PNG" id="img4"></li>
+				<li>Leer la respuesta enviada por el servidor:
+					<img src="img5.PNG" id="img5"></li>
+				<li>Cierre o reuso de la conexión para futuras peticiones.</li>
+			</ol>
+			<p>Si está activado el HTTP pipelining, varias peticiones pueden enviarse sin tener que esperar que la primera respuesta haya sido satisfecha. Este procedimiento es difícil de implementar en las redes de computadores actuales, donde se mezclan software antiguos y modernos. Así que el HTTP pipelining  ha sido substituido en HTTP/2 por el multiplexado de varias peticiones en una sola trama
+			</p>
+			</div>	
+		</div>
+	</div>
+	<div class="container" id="mens">
+		<div class="row">
+			<h2 class="col-12 col-sm-12">Mensajes HTTP</h2>
+			<div class="col-12 col-sm-12"><p>En las versiones del protocolo HTTP/1.1 y anteriores los mensajes eran de formato texto y eran totalmente comprensibles directamente por una persona. En HTTP/2, los mensajes estan estructurados en un nuevo formato binario y las tramas permiten la compresión de las cabeceras y su multiplexación. Así pues, incluso si solamente parte del mensaje original en HTTP se envía en este formato, la sematica de cada mensaje es la misma y el cliente puede formar el mensaje original en HTTP/1.1. Luego, es posible interpretar los mensajes HTTP/2 en el formato de HTTP/1.1.<br><br>
+			Existen dos tipos de mensajes HTTP: peticiones y respuestas, cada uno sigue su propio formato</p>
+			</div>
+			<div class="col-12 col-sm-6">
+				<h3 class="text-center">Peticiones</h3>
+				<p>Un ejemplo de petición HTTP:</p>
+				<img src="img6.PNG" id="img6">
+				<p>Una petición de HTTP, está formado  por los siguientes campos:</p>
+				<ul>
+					<li>Un método HTTP,  normalmente pueden ser un verbo, como: GET, POST o un nombre como: OPTIONS o HEAD, que defina la operación que el cliente quiera realizar. El objetivo de un cliente, suele ser una petición de recursos, usando GET, o presentar un valor de un formulario HTML, usando POST, aunque en otras ocasiones puede hacer otros tipos de peticiones.</li>
+					<li>La dirección del recurso pedido; la URL del recurso, sin los elementos obvios por el contexto, como pueden ser: sin el  protocolo (http://),  el dominio (aquí developer.mozilla.org), o el puerto TCP (aquí el 80). </li>
+					<li>La versión del protocolo HTTP.</li>
+					<li>Cabeceras HTTP opcionales, que pueden aportar información adicional a los servidores.</li>
+					<li>O un cuerpo de mensaje, en algún método, como puede ser POST, en el cual envía la información para el servidor.</li>
+				</ul>
+			</div>
+			<div class="col-12 col-sm-6">
+				<h3 class="text-center">Respuestas</h3>
+				<p>Un ejemplo de repuesta:</p>
+				<img src="img7.PNG" id="img7">
+				<p>Las respuestas están formadas por los siguentes campos:</p>
+				<ul>
+					<li>La versión del protocolo HTTP que están usando.</li>
+					<li>Un código de estado, indicando si la petición ha sido exitosa, o no, y debido a que.</li>
+					<li>Un mensaje de estado, una breve descripción del código de estado.</li>
+					<li>Cabeceras HTTP, como las de las peticiones.</li>
+					<li>Opcionalmente, el recurso que se ha pedido.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+	<footer class = "jumbotron text-center" id = "cont">
+    <h4> &copy; Copyright 2020. Todos los derechos reservados, el presente trabajo fue realizado por Francisco Salazar. </h4>
+  	</footer>
+
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
